@@ -1,0 +1,7 @@
+{
+  "name": "secure-socket-buffer-benchmark-node",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Node.js comparison worker for the Dart secure socket buffer benchmark",
+  "license": "BSD-3-Clause"
+}

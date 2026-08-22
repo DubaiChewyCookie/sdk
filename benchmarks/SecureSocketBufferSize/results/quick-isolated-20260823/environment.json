@@ -1,0 +1,594 @@
+{
+  "benchmark_git_status": "?? benchmarks/SecureSocketBufferSize/",
+  "captured_at": "2026-08-22T15:27:24.892258+00:00",
+  "config": {
+    "cells": 672,
+    "latency_ms": 8000,
+    "memory_per_container": "4 GiB, swap disabled",
+    "partner_go_cpus": 4,
+    "payloads": [
+      1024,
+      16384,
+      65536,
+      1048576
+    ],
+    "repetitions": 3,
+    "run_id": "quick-isolated-20260823",
+    "seed": "0xDAB7",
+    "suite": "quick",
+    "target_cpus": 1,
+    "throughput_ms": 12000,
+    "warmup_ms": 3000
+  },
+  "host_cpu_name": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "host_memory_bytes": 137356988416,
+  "host_platform": "Windows-11-10.0.26200-SP0",
+  "placements": {
+    "1": {
+      "observer_cpus": [
+        0
+      ],
+      "partner_cpus": [
+        2,
+        18,
+        4,
+        20
+      ],
+      "target_cpus": [
+        16
+      ]
+    },
+    "2": {
+      "observer_cpus": [
+        0
+      ],
+      "partner_cpus": [
+        22,
+        8,
+        24,
+        10
+      ],
+      "target_cpus": [
+        6
+      ]
+    },
+    "3": {
+      "observer_cpus": [
+        0
+      ],
+      "partner_cpus": [
+        12,
+        28,
+        14,
+        30
+      ],
+      "target_cpus": [
+        26
+      ]
+    }
+  },
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "topology": {
+    "llc_groups": [
+      "inferred-ccd-0",
+      "inferred-ccd-1"
+    ],
+    "llc_source": "inferred_5950x_core_halves_due_wsl",
+    "logical_cpu_count": 32,
+    "logical_cpus": [
+      {
+        "core": 0,
+        "cpu": 0,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          0,
+          1
+        ]
+      },
+      {
+        "core": 0,
+        "cpu": 1,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          0,
+          1
+        ]
+      },
+      {
+        "core": 1,
+        "cpu": 2,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          2,
+          3
+        ]
+      },
+      {
+        "core": 1,
+        "cpu": 3,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          2,
+          3
+        ]
+      },
+      {
+        "core": 2,
+        "cpu": 4,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          4,
+          5
+        ]
+      },
+      {
+        "core": 2,
+        "cpu": 5,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          4,
+          5
+        ]
+      },
+      {
+        "core": 3,
+        "cpu": 6,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          6,
+          7
+        ]
+      },
+      {
+        "core": 3,
+        "cpu": 7,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          6,
+          7
+        ]
+      },
+      {
+        "core": 4,
+        "cpu": 8,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          8,
+          9
+        ]
+      },
+      {
+        "core": 4,
+        "cpu": 9,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          8,
+          9
+        ]
+      },
+      {
+        "core": 5,
+        "cpu": 10,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          10,
+          11
+        ]
+      },
+      {
+        "core": 5,
+        "cpu": 11,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          10,
+          11
+        ]
+      },
+      {
+        "core": 6,
+        "cpu": 12,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          12,
+          13
+        ]
+      },
+      {
+        "core": 6,
+        "cpu": 13,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          12,
+          13
+        ]
+      },
+      {
+        "core": 7,
+        "cpu": 14,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          14,
+          15
+        ]
+      },
+      {
+        "core": 7,
+        "cpu": 15,
+        "llc": "inferred-ccd-0",
+        "package": 0,
+        "siblings": [
+          14,
+          15
+        ]
+      },
+      {
+        "core": 8,
+        "cpu": 16,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          16,
+          17
+        ]
+      },
+      {
+        "core": 8,
+        "cpu": 17,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          16,
+          17
+        ]
+      },
+      {
+        "core": 9,
+        "cpu": 18,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          18,
+          19
+        ]
+      },
+      {
+        "core": 9,
+        "cpu": 19,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          18,
+          19
+        ]
+      },
+      {
+        "core": 10,
+        "cpu": 20,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          20,
+          21
+        ]
+      },
+      {
+        "core": 10,
+        "cpu": 21,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          20,
+          21
+        ]
+      },
+      {
+        "core": 11,
+        "cpu": 22,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          22,
+          23
+        ]
+      },
+      {
+        "core": 11,
+        "cpu": 23,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          22,
+          23
+        ]
+      },
+      {
+        "core": 12,
+        "cpu": 24,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          24,
+          25
+        ]
+      },
+      {
+        "core": 12,
+        "cpu": 25,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          24,
+          25
+        ]
+      },
+      {
+        "core": 13,
+        "cpu": 26,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          26,
+          27
+        ]
+      },
+      {
+        "core": 13,
+        "cpu": 27,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          26,
+          27
+        ]
+      },
+      {
+        "core": 14,
+        "cpu": 28,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          28,
+          29
+        ]
+      },
+      {
+        "core": 14,
+        "cpu": 29,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          28,
+          29
+        ]
+      },
+      {
+        "core": 15,
+        "cpu": 30,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          30,
+          31
+        ]
+      },
+      {
+        "core": 15,
+        "cpu": 31,
+        "llc": "inferred-ccd-1",
+        "package": 0,
+        "siblings": [
+          30,
+          31
+        ]
+      }
+    ],
+    "physical_core_count": 16,
+    "selected_physical_cores": [
+      {
+        "core": 0,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 0,
+        "package": 0,
+        "siblings": [
+          0,
+          1
+        ]
+      },
+      {
+        "core": 1,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 2,
+        "package": 0,
+        "siblings": [
+          2,
+          3
+        ]
+      },
+      {
+        "core": 2,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 4,
+        "package": 0,
+        "siblings": [
+          4,
+          5
+        ]
+      },
+      {
+        "core": 3,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 6,
+        "package": 0,
+        "siblings": [
+          6,
+          7
+        ]
+      },
+      {
+        "core": 4,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 8,
+        "package": 0,
+        "siblings": [
+          8,
+          9
+        ]
+      },
+      {
+        "core": 5,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 10,
+        "package": 0,
+        "siblings": [
+          10,
+          11
+        ]
+      },
+      {
+        "core": 6,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 12,
+        "package": 0,
+        "siblings": [
+          12,
+          13
+        ]
+      },
+      {
+        "core": 7,
+        "llc": "inferred-ccd-0",
+        "logical_cpu": 14,
+        "package": 0,
+        "siblings": [
+          14,
+          15
+        ]
+      },
+      {
+        "core": 8,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 16,
+        "package": 0,
+        "siblings": [
+          16,
+          17
+        ]
+      },
+      {
+        "core": 9,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 18,
+        "package": 0,
+        "siblings": [
+          18,
+          19
+        ]
+      },
+      {
+        "core": 10,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 20,
+        "package": 0,
+        "siblings": [
+          20,
+          21
+        ]
+      },
+      {
+        "core": 11,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 22,
+        "package": 0,
+        "siblings": [
+          22,
+          23
+        ]
+      },
+      {
+        "core": 12,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 24,
+        "package": 0,
+        "siblings": [
+          24,
+          25
+        ]
+      },
+      {
+        "core": 13,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 26,
+        "package": 0,
+        "siblings": [
+          26,
+          27
+        ]
+      },
+      {
+        "core": 14,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 28,
+        "package": 0,
+        "siblings": [
+          28,
+          29
+        ]
+      },
+      {
+        "core": 15,
+        "llc": "inferred-ccd-1",
+        "logical_cpu": 30,
+        "package": 0,
+        "siblings": [
+          30,
+          31
+        ]
+      }
+    ]
+  },
+  "versions": {
+    "captured_at": "2026-08-22T13:10:58.231965+00:00",
+    "dart": "Dart SDK version: 3.14.0-edge.None (main) (Unknown timestamp) on \"linux_x64\"",
+    "docker": "29.6.1",
+    "go": "go version go1.25.14 linux/amd64",
+    "images": {
+      "dart": {
+        "created": "2026-08-22T12:40:44.60829362Z",
+        "id": "sha256:c340aa97d503ef58ff911edead0640d243c986fa1f32e2ac57178370cd8bc219",
+        "tag": "dart-secure-socket-buffer-benchmark:local"
+      },
+      "go": {
+        "created": "2026-08-22T12:07:06.566289254Z",
+        "id": "sha256:eda2b50676bc70ee3c37a0545625cc4456d542a15dd79de81236b381d6689127",
+        "tag": "go-secure-socket-buffer-benchmark:local"
+      },
+      "node": {
+        "created": "2026-08-22T12:07:14.065002772Z",
+        "id": "sha256:2a415fc69aa548daaf44ec9625f066925bee1ee1f0de24fa721615a07f1bd337",
+        "tag": "node-secure-socket-buffer-benchmark:local"
+      },
+      "observer": {
+        "created": "2026-08-22T12:16:47.818330942Z",
+        "id": "sha256:375c13655b4278a53351196dcf7f60dbad6dc7c08b2cc130bf7b8e1bfb1bcde3",
+        "tag": "secure-socket-buffer-observer:local"
+      }
+    },
+    "node": "v24.19.0",
+    "sdk_git_head": "1a6c95741dbe5d6140970f690d22f22f2834a39f"
+  }
+}

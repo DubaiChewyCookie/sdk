@@ -1,0 +1,4 @@
+name: secure_socket_buffer_benchmark_dart
+publish_to: none
+environment:
+  sdk: '>=3.14.0-0 <4.0.0'

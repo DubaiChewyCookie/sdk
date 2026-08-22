@@ -1,0 +1,13 @@
+.git/**
+.dart_tool/**
+out/**
+buildtools/win-x64/**
+buildtools/reclient/**
+buildtools/reclient-win/**
+win_toolchain/**
+third_party/cygwin/**
+benchmarks/SecureSocketBufferSize/build/**
+benchmarks/SecureSocketBufferSize/results/**
+benchmarks/SecureSocketBufferSize/workers/node/node_modules/**
+benchmarks/SecureSocketBufferSize/workers/dart/Dockerfile*
+**/__pycache__

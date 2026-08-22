@@ -1,0 +1,20 @@
+{
+  "cells": 672,
+  "latency_ms": 8000,
+  "memory_per_container": "4 GiB, swap disabled",
+  "partner_go_cpus": 4,
+  "payloads": [
+    1024,
+    16384,
+    65536,
+    1048576
+  ],
+  "repetitions": 3,
+  "run_id": "quick-isolated-20260823",
+  "seed": "0xDAB7",
+  "suite": "quick",
+  "target_cpus": 1,
+  "throughput_ms": 12000,
+  "wall_seconds": 9742.9915664,
+  "warmup_ms": 3000
+}
