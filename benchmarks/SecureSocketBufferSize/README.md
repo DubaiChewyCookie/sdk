@@ -30,15 +30,20 @@ production benchmark.
 
 ## Prerequisites
 
-- Docker Desktop using Linux containers with at least six visible physical
-  cores and 10 GiB of available memory;
+- Docker Desktop on Windows/macOS or a BuildKit-enabled Docker Engine on Linux,
+  with at least six visible physical cores and 10 GiB of available memory for
+  Linux containers;
 - Python 3 with `psutil` and OpenSSL;
-- the checked-out SDK branch and its fetched Linux build dependencies.
+- the checked-out SDK branch with its dependencies fetched.
 
-The Dart worker image builds a ReleaseX64 SDK from the checked-out branch
-source. Go and Node.js run from their own worker images.
+The Dart worker image builds a native ReleaseX64 or ReleaseARM64 SDK from the
+checked-out branch source. Go and Node.js run from their own multi-architecture
+worker images. AMD64 and ARM64 results describe different host architectures
+and must not be compared directly.
 
 ## Commands
+
+On Windows PowerShell:
 
 ```powershell
 cd benchmarks\SecureSocketBufferSize
@@ -49,6 +54,21 @@ python -m pip install -r requirements.txt
 .\run.ps1 retry --run-id quick-local
 .\run.ps1 report --run-id quick-local
 ```
+
+On Linux or macOS:
+
+```bash
+cd benchmarks/SecureSocketBufferSize
+python3 -m pip install -r requirements.txt
+bash ./run.sh prepare
+bash ./run.sh smoke --run-id smoke-local
+bash ./run.sh quick --run-id quick-local
+bash ./run.sh retry --run-id quick-local
+bash ./run.sh report --run-id quick-local
+```
+
+`run.sh` uses `python3` by default. Set `PYTHON` to select another Python 3
+executable.
 
 Useful bounded overrides are `--repetitions`, `--warmup-ms`,
 `--throughput-ms`, and `--latency-ms`.

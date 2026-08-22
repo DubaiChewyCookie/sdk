@@ -117,6 +117,8 @@ def collect_versions() -> dict[str, Any]:
             "tag": image,
             "id": inspected["Id"],
             "created": inspected["Created"],
+            "os": inspected["Os"],
+            "architecture": inspected["Architecture"],
         }
     return {
         "captured_at": dt.datetime.now(dt.timezone.utc).isoformat(),
